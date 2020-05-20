@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="FFFApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FFFApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodel="using:FFFApp.viewmodel"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Page.DataContext>
+        <viewmodel:EventViewModel></viewmodel:EventViewModel>
+    </Page.DataContext>
+
+    <Grid>
+        <Button Content="Opret" Command="{Binding OpretEvent}" Margin="439,295,0,0" VerticalAlignment="Top" Height="37" Width="100" Foreground="Black" Background="Gray"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="200,49,0,0" Text="EventId" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,66,0,0" Text="{Binding NewEvent.EventId,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="200,92,0,0" Text="EventNavn" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,109,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="200,140,0,0" Text="EventDato" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,157,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="200,191,0,0" Text="EventStart" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,215,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="200,252,0,0" Text="EventSlut" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,269,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="200,304,0,0" Text="EventAddresse" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,321,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="340,49,0,0" Text="EventPris" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="340,66,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="340,92,0,0" Text="EventTilmeldte" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="340,109,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="340,140,0,0" Text="EventBilled" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="340,157,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="340,191,0,0" Text="EventBeskrivelse" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black" Margin="340,215,0,0"/>
+
+    </Grid>
+</Page>
