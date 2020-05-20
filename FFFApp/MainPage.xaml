@@ -20,31 +20,31 @@
         <TextBox HorizontalAlignment="Left" Margin="200,66,0,0" Text="{Binding NewEvent.EventId,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="200,92,0,0" Text="EventNavn" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,109,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,109,0,0" Text="{Binding NewEvent.EventNavn,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="200,140,0,0" Text="EventDato" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,157,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,157,0,0" Text="{Binding NewEvent.EventDato,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="200,191,0,0" Text="EventStart" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,215,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,215,0,0" Text="{Binding NewEvent.EventStart,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="200,252,0,0" Text="EventSlut" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,269,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,269,0,0" Text="{Binding NewEvent.EventSlut,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="200,304,0,0" Text="EventAddresse" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="200,321,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="200,321,0,0" Text="{Binding NewEvent.EventAddresse,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="340,49,0,0" Text="EventPris" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="340,66,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="340,66,0,0" Text="{Binding NewEvent.EventPris,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="340,92,0,0" Text="EventTilmeldte" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="340,109,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="340,109,0,0" Text="{Binding NewEvent.EventTilmeldte,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="340,140,0,0" Text="EventBilled" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="340,157,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="340,157,0,0" Text="{Binding NewEvent.EventBilled,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="340,191,0,0" Text="EventBeskrivelse" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
-        <TextBox HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black" Margin="340,215,0,0"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding NewEvent.EventBeskrivelse,Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black" Margin="340,215,0,0"/>
 
     </Grid>
 </Page>

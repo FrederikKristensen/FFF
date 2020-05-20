@@ -12,31 +12,26 @@ namespace FFFApp.model
 
         public string EventNavn { get; set; }
 
-        public TimeSpan? EventTid { get; set; }
+        public DateTime EventDato { get; set; }
 
-        public DateTime? EventDato { get; set; }
+        public TimeSpan EventStart { get; set; }
 
-        public string EventAdresse { get; set; }
+        public TimeSpan EventSlut { get; set; }
 
-        public int? EventPostnummer { get; set; }
+        public string EventAddresse { get; set; }
+
+        public int? EventPris { get; set; }
+
+        public int? EventTilmeldte { get; set; }
+
+        public byte[] EventBilled { get; set; }
+
+        public string EventBeskrivelse { get; set; }
 
         public Event()
         {
         }
 
-        public Event(int eventId, string eventNavn, TimeSpan? eventTid, DateTime? eventDato, string eventAdresse, int? eventPostnummer)
-        {
-            EventId = eventId;
-            EventNavn = eventNavn;
-            EventTid = eventTid;
-            EventDato = eventDato;
-            EventAdresse = eventAdresse;
-            EventPostnummer = eventPostnummer;
-        }
-
-        public override string ToString()
-        {
-            return $"{nameof(EventId)}: {EventId}, {nameof(EventNavn)}: {EventNavn}, {nameof(EventTid)}: {EventTid}, {nameof(EventDato)}: {EventDato}, {nameof(EventAdresse)}: {EventAdresse}, {nameof(EventPostnummer)}: {EventPostnummer}";
-        }
+        
     }
 }

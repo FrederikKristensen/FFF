@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using FFFApp.Annotations;
 using FFFApp.common;
 using FFFApp.model;
+using FFFApp.model.Persitens;
 
 namespace FFFApp.viewmodel
 {
@@ -30,9 +31,11 @@ namespace FFFApp.viewmodel
             _OpretEvent = new RelayCommand(OpretEventMetode);
         }
 
-        private void OpretEventMetode()
+        private async void OpretEventMetode()
         {
-            // Kan restservice
+            EventPersitens EvePersi = new EventPersitens();
+
+            await EvePersi.OpretEvent(_newEvent);
         }
 
 
