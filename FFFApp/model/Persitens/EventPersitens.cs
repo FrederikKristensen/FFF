@@ -10,7 +10,8 @@ namespace FFFApp.model.Persitens
 {
     class EventPersitens
     {
-        private string URI = "http://localhost:61270/api/Eventtabs/";
+        //private string URI = "http://localhost:61270/api/Eventtabs/";
+        private string URI = "http://fana-web-app.azurewebsites.net/api/Eventtabs/";
 
         public async Task<Event> OpretEvent(Event _event)
         {
