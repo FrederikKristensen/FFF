@@ -128,6 +128,12 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="viewmodel\EventViewModel.cs" />
+    <Compile Include="view\RedigereEvent.xaml.cs">
+      <DependentUpon>RedigereEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="view\SletEvent.xaml.cs">
+      <DependentUpon>SletEvent.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -153,11 +159,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="view\Redigerevent.xaml">
+    <Page Include="view\RedigereEvent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SletEvent.xaml">
+    <Page Include="view\SletEvent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

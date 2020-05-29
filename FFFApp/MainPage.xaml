@@ -48,27 +48,27 @@
         <TextBox HorizontalAlignment="Left" Text="{Binding NewEvent.EventBeskrivelse, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Foreground="Black" Margin="43,563,0,0" Height="116"/>
         <TextBlock HorizontalAlignment="Left" FontSize="50" Margin="82,0,0,0" Text="Opret Event" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"/>
 
+        
         <Button Content="Slet event" Foreground="Black" Margin="0,726,0,0" VerticalAlignment="Top">
             <Custom:Interaction.Behaviors>
                 <Custom1:EventTriggerBehavior EventName="Click">
-                    <Custom1:NavigateToPageAction TargetPage="FFFApp.SletEvent"/>
+                    <Custom1:NavigateToPageAction TargetPage="FFFApp.view.SletEvent"/>
                 </Custom1:EventTriggerBehavior>
             </Custom:Interaction.Behaviors>
         </Button>
+        
         <Button Content="Redigere event" Foreground="Black" Margin="82,726,0,0" VerticalAlignment="Top">
             <Custom:Interaction.Behaviors>
                 <Custom1:EventTriggerBehavior EventName="Click">
-                    <Custom1:NavigateToPageAction TargetPage="view.Redigerevent"/>
+                    <Custom1:NavigateToPageAction TargetPage="FFFApp.view.RedigereEvent"/>
                 </Custom1:EventTriggerBehavior>
             </Custom:Interaction.Behaviors>
         </Button>
 
-        <StackPanel Grid.ColumnSpan="11" Orientation="Horizontal"
-                    HorizontalAlignment="Center" Grid.Row="10"/>
         <Button Content="Der ud af" Foreground="Black" Margin="195,726,0,0" VerticalAlignment="Top">
             <Custom:Interaction.Behaviors>
                 <Custom1:EventTriggerBehavior EventName="click">
-                    <Custom1:NavigateToPageAction TargetPage="FFF.FFFApp.SletEvent"/>
+                    <Custom1:NavigateToPageAction TargetPage="FFFApp.view.SletEvent"/>
                 </Custom1:EventTriggerBehavior>
             </Custom:Interaction.Behaviors>
         </Button>
