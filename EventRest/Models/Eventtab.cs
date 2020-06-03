@@ -6,6 +6,7 @@ namespace EventRest.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
+    // Her definere vi hvordan vores tabel i databasen skal designes
     [Table("Eventtab")]
     public partial class Eventtab
     {

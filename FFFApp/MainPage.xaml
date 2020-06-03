@@ -64,13 +64,5 @@
                 </Custom1:EventTriggerBehavior>
             </Custom:Interaction.Behaviors>
         </Button>
-
-        <Button Content="Der ud af" Foreground="Black" Margin="195,726,0,0" VerticalAlignment="Top">
-            <Custom:Interaction.Behaviors>
-                <Custom1:EventTriggerBehavior EventName="click">
-                    <Custom1:NavigateToPageAction TargetPage="FFFApp.view.SletEvent"/>
-                </Custom1:EventTriggerBehavior>
-            </Custom:Interaction.Behaviors>
-        </Button>
     </Grid>
 </Page>

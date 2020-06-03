@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace FFFApp.model.Persitens
 {
+    // Implementation af Persitens i form af Json
     class EventPersitens
     {
         //private string URI = "http://localhost:61270/api/Eventtabs/";

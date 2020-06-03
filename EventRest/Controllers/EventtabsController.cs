@@ -12,6 +12,7 @@ using EventRest.Models;
 
 namespace EventRest.Controllers
 {
+    // Her laver vi Controlleren til API'en
     public class EventtabsController : ApiController
     {
         private Model1 db = new Model1();

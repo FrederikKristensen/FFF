@@ -18,6 +18,7 @@ namespace FFFApp.viewmodel
         private Event _newEvent = new Event();
         private RelayCommand _OpretEvent;
 
+        // Indsætter et nyt event i databasen
         public Event NewEvent
         {
             get { return _newEvent; }
@@ -37,7 +38,6 @@ namespace FFFApp.viewmodel
 
             await EvePersi.OpretEvent(_newEvent);
         }
-
 
 
 

@@ -8,6 +8,9 @@ namespace FFFApp.model
 {
     class Event
     {
+
+        // Definer hvilke datatyper Event kræver
+
         public int EventId { get; set; }
 
         public string EventNavn { get; set; }

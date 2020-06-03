@@ -11,19 +11,22 @@ namespace FFFApp.common
     {
         private Action _method;
 
+        // Kører sammentidig med execute
         public RelayCommand(Action method)
         {
             _method = method;
         }
 
+        // Tjekker om commanden kan blive kørt eller ej
         public bool CanExecute(object parameter)
         {
             return true;
         }
 
+        // Kører commanden 
         public void Execute(object parameter)
         {
-            _method?.Invoke();
+            _method?.Invoke();  
         }
 
         public event EventHandler CanExecuteChanged;
